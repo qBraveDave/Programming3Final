@@ -96,7 +96,7 @@ function draw() {
  if(frameCount % 60 == 0){
         var statsJSON = JSON.stringify(stats);
         function sendStats(evt) {
-            io.emit("send statistic", statsJSON);
+            socket.emit("send statistic", statsJSON);
         }
 
         sendStats();

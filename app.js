@@ -3,6 +3,7 @@ var app = express();
 var fs = require("fs");
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
+var socket = require('socket.io-client')('http://localhost');
 
 app.get('/', function (req, res) {
     res.redirect('index.html');
