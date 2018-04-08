@@ -16,7 +16,7 @@ var matrix = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 2, 0, 1, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 9, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 3, 9, 0, 0, 0, 0, 0, 0, 0],
+    [0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -36,6 +36,8 @@ var mah = [];
 var mardik = [];
 var Exanak;
 var flood = [];
+
+// var express = require(express)
 
 var stats = {
     grass : {eaten : 0, bazmacele : 0},
@@ -91,7 +93,7 @@ function setup() {
 }
 
 function draw() {
- /*if(frameCount % 60 == 0){
+ /*zif(frameCount % 60 == 0){
         var statsJSON = JSON.stringify(stats);
 
         function sendStats(event) {
@@ -101,7 +103,15 @@ function draw() {
         }
 
         sendStats();
-    }*/
+ }*/
+
+    //  Indexes of Characters
+    //1 - Grass
+    //2 - Xotaker
+    //3 - Gishatich
+    //4 - Mah
+    //7 - Mard
+    //9 - Qar(Obstacle)
 
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {

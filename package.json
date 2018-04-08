@@ -1,9 +1,22 @@
 {
+  "name": "prog3final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "name": "final",
-  "version": "1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qBraveDave/Programming3Final.git"
+  },
+  "author": "BraveDvae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qBraveDave/Programming3Final/issues"
+  },
+  "homepage": "https://github.com/qBraveDave/Programming3Final#readme",
   "dependencies": {
     "express": "^4.16.3",
     "socket.io": "^2.1.0"
