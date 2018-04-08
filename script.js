@@ -93,17 +93,14 @@ function setup() {
 }
 
 function draw() {
- /*zif(frameCount % 60 == 0){
+ if(frameCount % 60 == 0){
         var statsJSON = JSON.stringify(stats);
-
-        function sendStats(event) {
-
-            socket.emit("send statistic", statsJSON);
-
+        function sendStats(evt) {
+            io.emit("send statistic", statsJSON);
         }
 
         sendStats();
- }*/
+ }
 
     //  Indexes of Characters
     //1 - Grass
